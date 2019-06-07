@@ -1,5 +1,5 @@
 <template>
-<v-navigation-drawer app permanent floating height="1000px">
+<v-navigation-drawer app permanent floating>
     <v-toolbar flat>
       <v-list>
         <v-list-tile>

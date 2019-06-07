@@ -1,5 +1,13 @@
 <template>
-    <p class="display-4 font-weight-light"> Alex Kalaitzidis portfolio </p>
+<v-container fluid layout align-end justify-end row fill-height>
+    <v-layout column>
+        <v-flex xs12>
+            <v-layout align-start justify-center row fill-height>
+                <p class="display-4 font-weight-light">blablabla blablabla </p>
+            </v-layout>
+        </v-flex>
+    </v-layout>
+</v-container>
 </template>
 <script>
 export default {
@@ -8,10 +16,4 @@ export default {
 </script>
 <style>
 
-.v-content__wrap{
-    max-width: 500px;
-    position:absolute;
-    bottom:0;
-    right:0;
-}
 </style>

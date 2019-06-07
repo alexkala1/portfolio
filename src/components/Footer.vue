@@ -1,6 +1,7 @@
 <template>
+
   <v-footer
-    app
+    inset
     dark
     height="auto"
   >
@@ -31,6 +32,7 @@
       </v-card-text>
     </v-card>
   </v-footer>
+</v-layout>
 </template>
 
 <script>
