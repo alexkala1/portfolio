@@ -49,6 +49,7 @@
   }
 </script>
 <style>
+
     .ftr:hover{
         transition-timing-function: ease;
         background: #888;

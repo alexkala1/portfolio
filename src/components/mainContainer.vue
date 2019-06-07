@@ -1,19 +1,17 @@
 <template>
-<v-container fluid layout align-end justify-end row fill-height>
-    <v-layout column>
-        <v-flex xs12>
-            <v-layout align-start justify-center row fill-height>
-                <p class="display-4 font-weight-light">blablabla blablabla </p>
-            </v-layout>
-        </v-flex>
+  <v-container fluid>
+    <v-layout row justify-space-between>
+      <v-flex xs6>
+        <p class="display-3 font-weight-light">Front-end web developer</p>
+      </v-flex>
+      <v-flex xs2 offset-xs4 align-end justify-end>
+        <h1 class="subheading font-weight-light">I am alex I am 23 years old and I live in Thessaloniki</h1>
+      </v-flex>
     </v-layout>
-</v-container>
+  </v-container>
 </template>
 <script>
-export default {
-    
-}
+export default {};
 </script>
 <style>
-
 </style>
