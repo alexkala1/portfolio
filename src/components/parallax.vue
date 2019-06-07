@@ -3,11 +3,11 @@
     
     height="910"
     dark
-    src=""
+    src="https://supercoolwallpapers.com/wp-content/uploads/2019/01/Best-91-Cool-Black-Wallpaper-For-Mobile-For-Desktop-PC-laptop-Android-Desktop-Iphone-and-Tablet-1.jpg"
   >
     <v-layout
       align-end 
-      justify-end
+      justify-start
       row
       fill-height
     >

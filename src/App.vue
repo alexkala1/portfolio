@@ -3,7 +3,7 @@
 <NavigationDrawer />
 
     <v-content>
-    <parallax />
+      <parallax />
       <mainContainer />
       <whoami />
         <Footer />

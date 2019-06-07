@@ -1,14 +1,15 @@
 <template>
 <v-navigation-drawer app permanent floating>
-    <v-toolbar flat>
-      <v-list>
-        <v-list-tile>
-          <v-list-tile-title class="title font-weight-regular text-xs-center">
-            Application
-          </v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-toolbar>
+    <v-layout column align-center>
+      <v-flex class="mt-4">
+      <v-avatar
+      size="120">
+        <img src ="https://scontent.fskg1-1.fna.fbcdn.net/v/t1.0-0/p370x247/55924262_2372587406105990_3536642973955522560_n.jpg?_nc_cat=111&_nc_ht=scontent.fskg1-1.fna&oh=daf32954cc963d3ba1c7c853a0abdcb1&oe=5D98E8A7">
+      </v-avatar>
+      <p class="subheading mt-2">Alex Kalaitzidis</p>
+      </v-flex>
+    </v-layout>
+
 
     <v-divider></v-divider>
     <v-list dense two-line>
