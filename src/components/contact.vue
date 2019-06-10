@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-layout>
       <v-flex xs8 offset-xs2 pa-3>
-        You can find me on:
+        <h1 class="subheading pa-3 ma-3 text-xs-center"> You can find me on: </h1>
         <v-expansion-panel inset>
           <v-expansion-panel-content v-for="(item,i) in 5" :key="i">
             <template v-slot:header>
