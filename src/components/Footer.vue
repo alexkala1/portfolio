@@ -1,5 +1,4 @@
 <template>
-
   <v-footer
     inset
     dark
@@ -32,7 +31,6 @@
       </v-card-text>
     </v-card>
   </v-footer>
-</v-layout>
 </template>
 
 <script>

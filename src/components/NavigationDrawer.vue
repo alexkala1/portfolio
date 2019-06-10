@@ -36,8 +36,11 @@ export default {
       return {
         drawer: true,
         items: [
-          { title: 'Home', icon: 'mdi-account' },
-          { title: 'About', icon: 'fas fa-info' }
+          { title: 'Home', icon: 'fas fa-home' },
+          { title: 'About', icon: 'fas fa-info' },
+          { title: 'Experience', icon: 'fas fa-user-graduate' },
+          { title: 'Projects', icon: 'fas fa-tasks' },
+          { title: 'Contact', icon: 'fas fa-address-card' }
         ],
         links: ['Home', 'Contacts', 'Settings'],
         mini: true,
