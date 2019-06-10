@@ -6,6 +6,7 @@
       <mainContainer/>
       <whoami/>
       <projects/>
+      <contact />
       <Footer/>
     </v-content>
   </v-app>
@@ -18,6 +19,7 @@ import mainContainer from "@/components/mainContainer";
 import whoami from "@/components/whoami";
 import parallax from "@/components/parallax";
 import projects from "@/components/projects";
+import contact from "@/components/contact";
 
 export default {
   name: "App",
@@ -27,7 +29,8 @@ export default {
     mainContainer,
     whoami,
     parallax,
-    projects
+    projects,
+    contact
   },
   data() {
     return {

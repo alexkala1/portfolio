@@ -1,6 +1,7 @@
 <template app>
   <v-container fluid >
     <v-parallax
+      jumbotron
       dark
       src="https://supercoolwallpapers.com/wp-content/uploads/2019/01/Best-91-Cool-Black-Wallpaper-For-Mobile-For-Desktop-PC-laptop-Android-Desktop-Iphone-and-Tablet-1.jpg"
     >
