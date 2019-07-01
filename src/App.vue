@@ -2,11 +2,21 @@
   <v-app dark>
     <NavigationDrawer/>
     <v-content>
+      <div id="Home">
       <parallax/>
+      </div>
+      <div id="About">
       <mainContainer/>
+      </div>
+      <div id="Experience">  
       <whoami/>
+      </div>
+      <div id="Projects">
       <projects/>
-      <contact />
+      </div>
+      <div id="Contact">
+      <contact/>
+      </div>
       <Footer/>
     </v-content>
   </v-app>
