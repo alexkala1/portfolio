@@ -18,7 +18,10 @@
             </p>
         </v-flex>
         <v-flex xs6 offset-xs6>
-            <v-btn round light color="yellow" uppercase>Download cv
+            <v-btn round light color="yellow" uppercase> 
+                <a href="../assets/Computer Networks IInew.pdf" target="_blank">
+                 Download cv
+                </a>
                 <v-icon right>
                     fas fa-file-alt
                 </v-icon> 
@@ -28,9 +31,7 @@
     <v-flex xs6>
             <p class="pa-5 ma-5">
 
-                saddsasdasaddsadsadsadsadsa
-                asddsadsadsadsadsa
-                dsadsadsadsadsadsasdasd
+Small text that says where I worked and how i got my exp
             </p>
     </v-flex>
 </v-container>

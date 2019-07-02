@@ -6,7 +6,7 @@
         <h1 class="subheading pa-3 ma-3 text-xs-center">You can find me on these platforms</h1>
       </v-flex>
       <v-flex xs6>
-        <ul class="ma-1">
+        <ul class="ma-1 pt-5 pb-5">
           <li v-for="contact in this.contact" :key="contact.name">
             <h1 class="subheading">
               <v-icon>{{contact.icon}}</v-icon>
@@ -29,20 +29,9 @@ export default {
         link: "http://github.com/ellftw"
       },
       {
-        name: "CSS",
-        icon: "fab fa-css3"
-      },
-      {
-        name: "JavaScript",
-        icon: "fab fa-js"
-      },
-      {
-        name: "VueJS",
-        icon: "fab fa-vuejs"
-      },
-      {
-        name: "AngularJS",
-        icon: "fab fa-angular"
+         name: "@alexkalalalala",
+        icon: "fab fa-instagram",
+        link: "http://instagram.com/alexkalalalala"
       }
     ]
   })
