@@ -21,34 +21,32 @@
 
 <script>
 export default {
-      data: () => ({
-
-            contact:[
-        {
-            name: '@ellftw',
-            icon: 'fab fa-github',
-            link: 'http://github.com/ellftw'  
-        },
-        {
-            name: 'CSS',
-            icon: 'fab fa-css3'  
-        },
-        {
-            name: 'JavaScript',
-            icon: 'fab fa-js'  
-        },
-        {
-            name: 'VueJS',
-            icon: 'fab fa-vuejs'  
-        },
-        {
-            name: 'AngularJS',
-            icon: 'fab fa-angular'  
-        }
-            ]
-        })
-}
-
+  data: () => ({
+    contact: [
+      {
+        name: "@ellftw",
+        icon: "fab fa-github",
+        link: "http://github.com/ellftw"
+      },
+      {
+        name: "CSS",
+        icon: "fab fa-css3"
+      },
+      {
+        name: "JavaScript",
+        icon: "fab fa-js"
+      },
+      {
+        name: "VueJS",
+        icon: "fab fa-vuejs"
+      },
+      {
+        name: "AngularJS",
+        icon: "fab fa-angular"
+      }
+    ]
+  })
+};
 </script>
 
 <style>
