@@ -1,55 +1,26 @@
-<template>
-  <v-carousel interval="0" cycle="false" dark>
-    <v-layout column align-center justify-center>
-      <v-flex>
-        <h1 class="display-3 font-weight-light mb-5">My projects</h1>
+<template app>
+  <v-container fluid>
+    <v-layout>
+      <v-flex xs8 offset-xs2 pa-3>
+        <h1 class="subheading pa-3 ma-3 text-xs-center"> My Projects </h1>
+        <v-expansion-panel inset>
+          <v-expansion-panel-content v-for="(item,i) in 5" :key="i">
+            <template v-slot:header>
+              <div>Item</div>
+            </template>
+            <v-card>
+              <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
+            </v-card>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
       </v-flex>
     </v-layout>
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-      reverse-transition="fade"
-      transition="fade"
-    ></v-carousel-item>
-  </v-carousel>
+  </v-container>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      items: [
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
-        }
-      ]
-    };
-  }
-};
+export default {};
 </script>
-<style lang="stylus">
-#example-custom-transition {
-  .fade {
-    &-enter-active, &-leave-active, &-leave-to {
-      transition: 0.3s ease-out;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
 
-    &-enter, &-leave, &-leave-to {
-      opacity: 0;
-    }
-  }
-}
+<style>
 </style>
