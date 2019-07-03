@@ -22,7 +22,7 @@
           </v-btn>
         </h2>
       </v-layout>
-      <v-layout justify-center align-center pb-5 pt-3 mt-3>
+      <v-layout justify-center align-center pt-3 mt-3>
         <v-btn href="#projects" round light>My Projects</v-btn>
       </v-layout>
     </v-container>
@@ -52,10 +52,8 @@ export default {
   background: #888;
 }
 .mainContainer {
-  margin-top:10%;
-  padding-top:48px;
   background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
-  height:600px;
+  height:100vh;
 }
 
 </style>
