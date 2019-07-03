@@ -1,46 +1,24 @@
 <template>
   <v-app dark>
-    <NavigationDrawer/>
     <v-content>
-      <div id="Home">
       <parallax/>
-      </div>
-      <div id="About">
-      <mainContainer/>
-      </div>
-      <div id="Experience">  
-      <whoami/>
-      </div>
-      <div id="Projects">
+      <div id="projects">
       <projects/>
       </div>
-      <div id="Contact">
-      <contact/>
-      </div>
-      <Footer/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import NavigationDrawer from "@/components/NavigationDrawer";
-import Footer from "@/components/Footer";
-import mainContainer from "@/components/mainContainer";
-import whoami from "@/components/whoami";
 import parallax from "@/components/parallax";
 import projects from "@/components/projects";
-import contact from "@/components/contact";
 
 export default {
   name: "App",
   components: {
-    NavigationDrawer,
-    Footer,
-    mainContainer,
-    whoami,
     parallax,
     projects,
-    contact
+    
   },
   data() {
     return {
@@ -51,5 +29,14 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth !important;
+}
+.theme--dark.application {
+    background: radial-gradient(white, black), url(https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg);
+    background-blend-mode: multiply !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+}
 </style>
 

@@ -1,14 +1,18 @@
 <template app>
-  <v-container fluid>
+  <v-container fluid pt-5 mt-5 pb-5 mb-5>
     <v-layout>
-      <v-flex xs8 offset-xs2 pa-3>
-        <h1 class="subheading pa-3 ma-3 text-xs-center"> My Projects </h1>
+      <v-flex xs8 offset-xs2       
+      pt-5
+      mt-5
+      pb-5
+      mb-5>
+        <h1 class="justify-start align-center text-xs-center font-weight-thin pb-5 mb-5 display-2">My Projects</h1>
         <v-expansion-panel inset>
           <v-expansion-panel-content v-for="project in projects" :key="project">
             <template v-slot:header>
               <h2 class="subheading">{{project.title}}</h2>
             </template>
-            <v-card>
+            <v-card color="rgba(255, 0, 0, 0.5)">
               <v-card-text>
                 <v-layout>
                 <v-flex xs8 mr-3>
@@ -24,7 +28,8 @@
                 </v-flex>
                 </v-layout>
                 <v-flex xs6 pa-3>
-                  <a :href=project.link>{{project.link}}</a>
+                  <v-btn round dark color="red darken-4" :href=project.code>View Code</v-btn>
+                  <v-btn round dark color="red darken-4" :href=project.link>View Project</v-btn>
                 </v-flex>
               </v-card-text>
             </v-card>
@@ -43,13 +48,16 @@ export default {
         title: "This Portfolio",
         description: "This is what I have created in a short period of time when I had some spare time.",
         technologies: "VueJS , Vuetify",
-        link: "https://github.com/ellftw/portfolio"
+        code: "https://github.com/alexkala1/portfolio",
+        link: "https://alexkala1.github.io/portfolio"
       },
       {
         title: "Thesis",
         description: "This project is a fingerprint authentication application for a university as I had it in mind. In this web application there are 3 different types of people with the authorisation to log in: Students, Secretaries and Teachers each one with their own access points and usabilities of the fingerprint authentication. For example students attend their lectures via fingerprint, teachers start their lectures via fingerprint etc.",
         technologies: "VueJS , Vuetify , NodeJS , Docker , MongoDB",
-        link: "https://github.com/ellftw/fattendancepublic"
+        code: "https://github.com/alexkala1/fattendancepublic",
+        link: ""
+
       }
     ]
   })
@@ -57,4 +65,11 @@ export default {
 </script>
 
 <style>
+
+.v-expansion-panel__header{
+  background-color:rgba(0, 0, 0, 0.5)
+}
+.theme--dark.v-expansion-panel .v-expansion-panel__container{
+  opacity: 0.95;
+}
 </style>
