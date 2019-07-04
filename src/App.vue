@@ -32,11 +32,13 @@ export default {
 html {
   scroll-behavior: smooth !important;
 }
-.theme--dark.application {
-    background: radial-gradient(white, black), url(https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg);
-    background-blend-mode: multiply !important;
-    background-attachment: fixed !important;
+.application--wrap {
+    background: url(https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg);
+    background-size:cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed ;
     background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 </style>
 

@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@mdi/font": "^3.6.95",
     "core-js": "^2.6.5",
+    "pdfjs": "^2.3.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-scrollto": "^2.15.0",
