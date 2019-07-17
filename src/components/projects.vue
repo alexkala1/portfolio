@@ -11,7 +11,8 @@
               <template v-slot:header>
                 <h2 class="subheading">{{project.title}}</h2>
               </template>
-              <v-card color="rgba(255, 0, 0, 0.5)">
+              <v-card style="background:linear-gradient(90deg, #333 70%, #555 100%)">
+                <v-divider></v-divider>
                 <v-card-text>
                   <v-layout>
                     <v-flex lg8 mr-3>{{project.description}}</v-flex>
@@ -26,8 +27,8 @@
                     </v-flex>
                   </v-layout>
                   <v-flex xs12 pt-1 align-start justify-center>
-                    <v-btn round dark color="red darken-4" :href="project.code">View Code</v-btn>
-                    <v-btn round dark color="red darken-4" :href="project.link">View Project</v-btn>
+                    <v-btn round light color="grey lighten-3" :href="project.code">View Code</v-btn>
+                    <v-btn round light color="grey lighten-3" :href="project.link">View Project</v-btn>
                   </v-flex>
                 </v-card-text>
               </v-card>
@@ -52,10 +53,7 @@ export default {
         title: "This Portfolio",
         description:
           "This is what I have created in a short period of time when I had some spare time.",
-        technologies: [
-          { name: "VueJS"},
-          { name: "Vuetify" }
-        ],
+        technologies: [{ name: "VueJS" }, { name: "Vuetify" }],
         code: "https://github.com/alexkala1/portfolio",
         link: "https://alexkala1.github.io/portfolio"
       },
@@ -64,7 +62,7 @@ export default {
         description:
           "This project is a fingerprint authentication application for a university as I had it in mind. In this web application there are 3 different types of people with the authorisation to log in: Students, Secretaries and Teachers each one with their own access points and usabilities of the fingerprint authentication. For example students attend their lectures via fingerprint, teachers start their lectures via fingerprint etc.",
         technologies: [
-          { name: "VueJS"},
+          { name: "VueJS" },
           { name: "Vuetify" },
           { name: "NodeJS" },
           { name: "Docker" },
@@ -72,6 +70,14 @@ export default {
         ],
         code: "https://github.com/alexkala1/fattendancepublic",
         link: ""
+      },
+      {
+        title: "Budget App",
+        description:
+          "This project is an Angular 8 project that helps keep track your budget. You can add your incomes and where you've spent your money so that you know exactly how and where you spent your money as well as your remaining money. Still work in progress",
+        technologies: [{ name: "Angular" }],
+        code: "https://github.com/alexkala1/budgetapp",
+        link: "https://alexkala1.github.io/budgetapp"
       }
     ]
   })
@@ -80,18 +86,27 @@ export default {
 
 <style>
 .projects {
-  height: 130vh;
+  height: 100vh;
+  overflow: hidden;
 }
-/* .container.fluid {
-    background-repeat: repeat;
-
-} */
 
 .v-expansion-panel__header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  /* background-image: -webkit-linear-gradient(90deg, #333 70%, #555 100%);
+background-image: -moz-linear-gradient(90deg, #333 70%, #555 100%);
+background-image: -o-linear-gradient(90deg, #333 70%, #555 100%);
+background-image: linear-gradient(90deg, #333 70%, #555 100%); */
 }
 .theme--dark.v-expansion-panel .v-expansion-panel__container {
   align-items: flex-start;
   opacity: 0.85;
+}
+.v-card__text {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
 }
 </style>

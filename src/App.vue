@@ -1,9 +1,9 @@
 <template>
   <v-app dark>
     <v-content>
-      <parallax/>
+      <parallax />
       <div id="projects">
-      <projects/>
+        <projects />
       </div>
     </v-content>
   </v-app>
@@ -17,8 +17,7 @@ export default {
   name: "App",
   components: {
     parallax,
-    projects,
-    
+    projects
   },
   data() {
     return {
@@ -28,17 +27,67 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 html {
   scroll-behavior: smooth !important;
 }
 .application--wrap {
-    background: url(https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg);
-    background-size:cover;
-    background-blend-mode: overlay;
-    background-attachment: fixed ;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
+  background: linear-gradient(
+    109.6deg,
+    rgba(14, 11, 56, 1) 11.2%,
+    rgba(239, 37, 37, 1) 91.1%
+  );
+  background-size: 150% 150%;
+  margin-bottom: 0;
+  -webkit-animation: bgtransition 16s ease infinite;
+  -moz-animation: bgtransition 16s ease infinite;
+  -o-animation: bgtransition 16s ease infinite;
+  animation: bgtransition 16s ease infinite;
+
+  @-webkit-keyframes bgtransition {
+    0% {
+      background-position: 11% 0%;
+    }
+    50% {
+      background-position: 90% 100%;
+    }
+    100% {
+      background-position: 11% 0%;
+    }
+  }
+  @-moz-keyframes bgtransition {
+    0% {
+      background-position: 11% 0%;
+    }
+    50% {
+      background-position: 90% 100%;
+    }
+    100% {
+      background-position: 11% 0%;
+    }
+  }
+  @-o-keyframes bgtransition {
+    0% {
+      background-position: 11% 0%;
+    }
+    50% {
+      background-position: 90% 100%;
+    }
+    100% {
+      background-position: 11% 0%;
+    }
+  }
+  @keyframes bgtransition {
+    0% {
+      background-position: 11% 0%;
+    }
+    50% {
+      background-position: 90% 100%;
+    }
+    100% {
+      background-position: 11% 0%;
+    }
+  }
 }
 </style>
 
