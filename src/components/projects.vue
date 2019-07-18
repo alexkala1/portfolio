@@ -6,12 +6,12 @@
           <h1
             class="justify-start align-center text-xs-center font-weight-thin pb-5 mb-5 display-2"
           >My Projects</h1>
-          <v-expansion-panel popout>
-            <v-expansion-panel-content v-for="project in projects" :key="project">
+          <v-expansion-panel light popout>
+            <v-expansion-panel-content v-for="project in projects" :key="project" >
               <template v-slot:header>
                 <h2 class="subheading">{{project.title}}</h2>
               </template>
-              <v-card style="background:linear-gradient(90deg, #333 70%, #555 100%)">
+              <v-card style="background:linear-gradient(90deg, #fff 60%, #999 100%);">
                 <v-divider></v-divider>
                 <v-card-text>
                   <v-layout>
@@ -27,8 +27,8 @@
                     </v-flex>
                   </v-layout>
                   <v-flex xs12 pt-1 align-start justify-center>
-                    <v-btn round light color="grey lighten-3" :href="project.code">View Code</v-btn>
-                    <v-btn round light color="grey lighten-3" :href="project.link">View Project</v-btn>
+                    <v-btn round light color="white" :href="project.code">View Code</v-btn>
+                    <v-btn round light color="white" :href="project.link">View Project</v-btn>
                   </v-flex>
                 </v-card-text>
               </v-card>
@@ -84,22 +84,18 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .projects {
-  height: 100vh;
+  height: 130vh;
   overflow: hidden;
 }
 
 .v-expansion-panel__header {
-  background-color: #333;
-  /* background-image: -webkit-linear-gradient(90deg, #333 70%, #555 100%);
-background-image: -moz-linear-gradient(90deg, #333 70%, #555 100%);
-background-image: -o-linear-gradient(90deg, #333 70%, #555 100%);
-background-image: linear-gradient(90deg, #333 70%, #555 100%); */
+background:linear-gradient(90deg, #fff 60%, #dfdfdf 100%);
+
 }
 .theme--dark.v-expansion-panel .v-expansion-panel__container {
   align-items: flex-start;
-  opacity: 0.85;
 }
 .v-card__text {
   max-height: 300px;
@@ -109,4 +105,8 @@ background-image: linear-gradient(90deg, #333 70%, #555 100%); */
     width: 0px;
     background: transparent; 
 }
+
+
+
 </style>
+ 

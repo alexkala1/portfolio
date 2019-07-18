@@ -39,10 +39,10 @@ html {
   );
   background-size: 150% 150%;
   margin-bottom: 0;
-  -webkit-animation: bgtransition 16s ease infinite;
-  -moz-animation: bgtransition 16s ease infinite;
-  -o-animation: bgtransition 16s ease infinite;
-  animation: bgtransition 16s ease infinite;
+  -webkit-animation: bgtransition 30s ease infinite;
+  -moz-animation: bgtransition 30s ease infinite;
+  -o-animation: bgtransition 30s ease infinite;
+  animation: bgtransition 30s ease infinite;
 
   @-webkit-keyframes bgtransition {
     0% {
