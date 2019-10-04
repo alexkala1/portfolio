@@ -18,7 +18,7 @@
         <v-btn
           round
           light
-          href="https://docs.google.com/document/d/1wB0S4e1kHWu66FohtyecL45QzoQxC_iwUBv-k_OvQXA/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1PV8KTkLlsdp4QhYkIKrUaEMZtqbnQTukfQJ26IQPEjk/edit?usp=sharing"
           target="_blank"
         >
           Preview CV

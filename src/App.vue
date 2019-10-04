@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-content>
-      <parallax />
+      <mainpage />
       <div id="projects">
         <projects />
       </div>
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import parallax from "@/components/parallax";
+import mainpage from "@/components/mainpage";
 import projects from "@/components/projects";
 
 export default {
   name: "App",
   components: {
-    parallax,
+    mainpage,
     projects
   },
   data() {
@@ -32,17 +32,13 @@ html {
   scroll-behavior: smooth !important;
 }
 .application--wrap {
-  background: linear-gradient(
-    109.6deg,
-    rgba(14, 11, 56, 1) 11.2%,
-    rgba(239, 37, 37, 1) 91.1%
-  );
-  background-size: 150% 150%;
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-size: 300% 300%;
   margin-bottom: 0;
-  -webkit-animation: bgtransition 30s ease infinite;
-  -moz-animation: bgtransition 30s ease infinite;
-  -o-animation: bgtransition 30s ease infinite;
-  animation: bgtransition 30s ease infinite;
+  -webkit-animation: bgtransition 20s ease infinite;
+  -moz-animation: bgtransition 20s ease infinite;
+  -o-animation: bgtransition 20s ease infinite;
+  animation: bgtransition 20s ease infinite;
 
   @-webkit-keyframes bgtransition {
     0% {

@@ -70,14 +70,6 @@ export default {
         ],
         code: "https://github.com/alexkala1/fattendancepublic",
         link: ""
-      },
-      {
-        title: "Budget App",
-        description:
-          "This project is an Angular 8 project that helps keep track your budget. You can add your incomes and where you've spent your money so that you know exactly how and where you spent your money as well as your remaining money. Still work in progress",
-        technologies: [{ name: "Angular" }],
-        code: "https://github.com/alexkala1/budgetapp",
-        link: "https://alexkala1.github.io/budgetapp"
       }
     ]
   })
