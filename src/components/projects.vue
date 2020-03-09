@@ -1,53 +1,74 @@
 <template app>
-  <div class="projects">
-    <v-container fluid mt-2 pb-5 mb-5>
-      <v-layout>
-        <v-flex md8 offset-md2 xs12 pb-5 mb-5>
-          <h1
-            class="justify-start align-center text-xs-center font-weight-thin pb-5 mb-5 display-2"
-          >My Projects</h1>
-          <v-expansion-panel light popout>
-            <v-expansion-panel-content v-for="project in projects" :key="project" >
-              <template v-slot:header>
-                <h2 class="subheading">{{project.title}}</h2>
-              </template>
-              <v-card style="background:linear-gradient(90deg, #fff 60%, #999 100%);">
-                <v-divider></v-divider>
-                <v-card-text>
-                  <v-layout>
-                    <v-flex lg8 mr-3>{{project.description}}</v-flex>
-                    <v-divider vertical></v-divider>
-                    <v-flex lg4>
-                      <ul>
-                        <li
-                          v-for="technology in project.technologies"
-                          :key="technology"
-                        >{{technology.name}}</li>
-                      </ul>
-                    </v-flex>
-                  </v-layout>
-                  <v-flex xs12 pt-1 align-start justify-center>
-                    <v-btn round light color="white" :href="project.code">View Code</v-btn>
-                    <v-btn round light color="white" :href="project.link">View Project</v-btn>
+  <v-container fluid mt-2 pb-5 mb-5 class="projects">
+    <v-layout justify-center align-center row style="min-height:70vh">
+      <v-flex md8 xs12 pb-5 mb-5>
+        <h1
+          class="justify-start align-center text-xs-center font-weight-thin pb-5 mb-5 display-2"
+        >My Projects</h1>
+        <v-expansion-panel dark popout>
+          <v-expansion-panel-content v-for="project in projects" :key="project.name">
+            <template v-slot:header>
+              <h2 class="subheading">{{project.title}}</h2>
+            </template>
+            <v-card style="background:linear-gradient(90deg, #111 60%, #333 100%);">
+              <v-divider></v-divider>
+              <v-card-text>
+                <v-layout>
+                  <v-flex lg8 mr-3>{{project.description}}</v-flex>
+                  <v-divider vertical></v-divider>
+                  <v-flex lg4>
+                    <ul>
+                      <li
+                        v-for="technology in project.technologies"
+                        :key="technology.name"
+                      >{{technology.name}}</li>
+                    </ul>
                   </v-flex>
-                </v-card-text>
-              </v-card>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex text-xs-center align-center justify-center>
-          <v-btn href="#app" round light>Back to top</v-btn>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+                </v-layout>
+                <v-flex xs12 pt-1 align-start justify-center>
+                  <v-btn round dark color="#222" :href="project.code" target="_blank">View Code</v-btn>
+                  <v-btn
+                    v-if="project.link"
+                    round
+                    dark
+                    color="#222"
+                    :href="project.link"
+                  >View Project</v-btn>
+                  <v-btn v-else round dark color="#222" @click="dialog = true">View Project</v-btn>
+                  <v-dialog v-model="dialog" width="270">
+                    <v-card dark>
+                      <v-card-title class="headline grey darken-2" primary-title>Project not ready</v-card-title>
+
+                      <v-card-text>This project is either still in progress or it must be installed 
+                      in order to view it. Please consider checking the code on github!</v-card-text>
+
+                      <v-divider></v-divider>
+
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn color="white" flat @click="dialog = false">OK</v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </v-dialog>
+                </v-flex>
+              </v-card-text>
+            </v-card>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-flex>
+    </v-layout>
+    <v-layout>
+      <v-flex text-xs-center>
+        <v-btn @click="$vuetify.goTo('.home', -500, -500)" round light>Back to top</v-btn>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
 export default {
   data: () => ({
+    dialog: false,
     projects: [
       {
         title: "This Portfolio",
@@ -68,8 +89,28 @@ export default {
           { name: "Docker" },
           { name: "MongoDB" }
         ],
-        code: "https://github.com/alexkala1/fattendancepublic",
-        link: ""
+        code: "https://github.com/alexkala1/fattendancepublic"
+      },
+      {
+        title: "Screen Recorder",
+        description: "This is an electron app that records either the entire screen or a selected window",
+        technologies: [
+          {name: "Electron"},
+          {name: "JavaScript"},
+        ],
+        code: "https://github.com/alexkala1/screenrecorder"
+      },
+      {
+        title: "React Encrypted Chat",
+        description: "This is a project in ReactJS that has 2 parts. The first part is a chatroom that sends a message with a double encrypt technique. The second part is a decryptor for these encrypted messages.",
+        technologies: [
+          {name: "MongoDB"},
+          {name: "express"},
+          {name: "React"},
+          {name: "NodeJS"},
+          {name: "JavaScript"}
+        ],
+        code: ""
       }
     ]
   })
@@ -78,27 +119,24 @@ export default {
 
 <style lang="scss">
 .projects {
-  height: 130vh;
+  background-size: cover;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .v-expansion-panel__header {
-background:linear-gradient(90deg, #fff 60%, #dfdfdf 100%);
-
+  background: linear-gradient(90deg, #111 60%, #222 100%);
 }
 .theme--dark.v-expansion-panel .v-expansion-panel__container {
   align-items: flex-start;
 }
 .v-card__text {
-  max-height: 300px;
+  min-height: 100%;
   overflow-y: scroll;
 }
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; 
+  width: 0px;
+  background: transparent;
 }
-
-
-
 </style>
  

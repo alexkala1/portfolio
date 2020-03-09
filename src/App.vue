@@ -2,9 +2,7 @@
   <v-app dark>
     <v-content>
       <mainpage />
-      <div id="projects">
-        <projects />
-      </div>
+      <projects />
     </v-content>
   </v-app>
 </template>
@@ -28,62 +26,45 @@ export default {
 </script>
 
 <style lang="scss">
-html {
-  scroll-behavior: smooth !important;
-}
 .application--wrap {
-background-image: linear-gradient(to right, #434343 0%, black 100%);
-  background-size: 300% 300%;
+  background-image: linear-gradient(
+      109deg,
+      transparent 0%,
+      transparent 5%,
+      rgba(149, 149, 149, 0.04) 5%,
+      rgba(149, 149, 149, 0.04) 38%,
+      transparent 38%,
+      transparent 100%
+    ),
+    linear-gradient(
+      324deg,
+      transparent 0%,
+      transparent 31%,
+      rgba(149, 149, 149, 0.04) 31%,
+      rgba(149, 149, 149, 0.04) 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    linear-gradient(
+      259deg,
+      transparent 0%,
+      transparent 11%,
+      rgba(149, 149, 149, 0.04) 11%,
+      rgba(149, 149, 149, 0.04) 57%,
+      transparent 57%,
+      transparent 100%
+    ),
+    linear-gradient(
+      221deg,
+      transparent 0%,
+      transparent 5%,
+      rgba(149, 149, 149, 0.04) 5%,
+      rgba(149, 149, 149, 0.04) 37%,
+      transparent 37%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
   margin-bottom: 0;
-  -webkit-animation: bgtransition 20s ease infinite;
-  -moz-animation: bgtransition 20s ease infinite;
-  -o-animation: bgtransition 20s ease infinite;
-  animation: bgtransition 20s ease infinite;
-
-  @-webkit-keyframes bgtransition {
-    0% {
-      background-position: 11% 0%;
-    }
-    50% {
-      background-position: 90% 100%;
-    }
-    100% {
-      background-position: 11% 0%;
-    }
-  }
-  @-moz-keyframes bgtransition {
-    0% {
-      background-position: 11% 0%;
-    }
-    50% {
-      background-position: 90% 100%;
-    }
-    100% {
-      background-position: 11% 0%;
-    }
-  }
-  @-o-keyframes bgtransition {
-    0% {
-      background-position: 11% 0%;
-    }
-    50% {
-      background-position: 90% 100%;
-    }
-    100% {
-      background-position: 11% 0%;
-    }
-  }
-  @keyframes bgtransition {
-    0% {
-      background-position: 11% 0%;
-    }
-    50% {
-      background-position: 90% 100%;
-    }
-    100% {
-      background-position: 11% 0%;
-    }
-  }
 }
 </style>
 
