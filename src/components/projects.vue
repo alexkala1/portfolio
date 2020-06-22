@@ -39,7 +39,7 @@
                     <v-card dark>
                       <v-card-title class="headline grey darken-2" primary-title>Project not ready</v-card-title>
 
-                      <v-card-text>This project is either still in progress or it must be installed 
+                      <v-card-text>This project is either still in progress or it must be installed
                       in order to view it. Please consider checking the code on github!</v-card-text>
 
                       <v-divider></v-divider>
@@ -101,16 +101,14 @@ export default {
         code: "https://github.com/alexkala1/screenrecorder"
       },
       {
-        title: "React Encrypted Chat",
-        description: "This is a project in ReactJS that has 2 parts. The first part is a chatroom that sends a message with a double encrypt technique. The second part is a decryptor for these encrypted messages.",
+        title: "Pizzahouse",
+        description: "This project is a pizzahouse created with laravel for basic CRUD implementation",
         technologies: [
-          {name: "MongoDB"},
-          {name: "express"},
-          {name: "React"},
-          {name: "NodeJS"},
-          {name: "JavaScript"}
+          {name: "Laravel"},
+          {name: "mySQL"},
+          {name: "Bootstrap"},
         ],
-        code: ""
+        code: "https://github.com/alexkala1/pizzahouse"
       }
     ]
   })
@@ -139,4 +137,3 @@ export default {
   background: transparent;
 }
 </style>
- 

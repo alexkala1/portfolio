@@ -12,7 +12,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@mdi/font": "^3.9.97",
+    "axios": "^0.19.2",
     "core-js": "^2.6.5",
+    "npm": "^6.14.5",
     "pdfjs": "^2.3.1",
     "vue": "^2.6.10",
     "vue-pdf": "^4.0.8",
@@ -28,7 +30,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
     "gh-pages": "^2.1.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.3.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.1",

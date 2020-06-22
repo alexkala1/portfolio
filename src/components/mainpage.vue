@@ -24,9 +24,9 @@
             <v-icon right>fas fa-file-alt</v-icon>
           </v-btn>
         </v-flex>
-        <v-flex sm6 offset-sm3 class="pt-5">
+        <v-flex sm4 offset-sm4 xs10 offset-xs1 class="pt-5">
           <div v-if="showpdf === true">
-            <v-img :src="require('/home/alex/portfolio/src/components/cv.png')" height="500" />
+            <v-img :src="require('/home/alex/portfolio/src/components/cv.png')" />
           </div>
         </v-flex>
       </v-flex>
