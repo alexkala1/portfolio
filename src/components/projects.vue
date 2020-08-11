@@ -101,6 +101,16 @@ export default {
         code: "https://github.com/alexkala1/screenrecorder"
       },
       {
+        title: "PDA",
+        description: "This is an ordering system for shops like restaurants, caffe etc that can create users, show available tables for customers and create orders for products depending on the shop",
+        technologies: [
+          {name: "Laravel"},
+          {name: "Bootstrap"},
+          {name: "PostgreSQL"},
+        ],
+        code: "https://github.com/alexkala1/pda"
+      },
+      {
         title: "Pizzahouse",
         description: "This project is a pizzahouse created with laravel for basic CRUD implementation",
         technologies: [
