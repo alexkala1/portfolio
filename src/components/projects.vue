@@ -119,7 +119,19 @@ export default {
           {name: "Bootstrap"},
         ],
         code: "https://github.com/alexkala1/pizzahouse"
-      }
+      },
+      {
+        title: "Sacchon app",
+        description: "This project was created for pfizer-codehub bootcamp for software engineering. It is a diabetes management app where patients can add data to the system, doctors can diagnose their data and consult them and finally they have a reporter that monitors their activity in the system",
+        technologies: [
+          {name: "Angular"},
+          {name: "Java"},
+          {name: "Restlet"},
+          {name: "MSSQL"},
+        ],
+        code: "https://github.com/alexkala1/pfizer-final-project"
+      },
+
     ]
   })
 };
