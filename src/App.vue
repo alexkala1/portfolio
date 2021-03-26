@@ -2,14 +2,21 @@
   <v-app dark>
     <v-main dark pa-0>
       <v-container fluid>
-        <router-view></router-view>
+        <Mainpage style="height: 100vh" />
+        <Projects />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Mainpage from "./components/mainpage";
+import Projects from "./components/projects";
 export default {
+  components: {
+    Mainpage,
+    Projects,
+  },
   name: "App",
 
   data: () => ({
