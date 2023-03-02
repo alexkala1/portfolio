@@ -80,7 +80,7 @@ export default {
         link: "https://www.linkedin.com/in/alex-kalaitzidis-a1386917b/",
       },
       {
-        icon: "mdi-email-send",
+        icon: "mdi-email",
         link: "mailto:alexkalaitzidis2@gmail.com",
       },
     ],
